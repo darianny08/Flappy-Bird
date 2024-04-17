@@ -341,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6260507834472930736}
   - component: {fileID: 6260507834472930737}
+  - component: {fileID: 883919429}
   m_Layer: 0
   m_Name: Pipes (1)_3 (2)
   m_TagString: Untagged
@@ -414,3 +415,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &883919429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260507834472930738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21471ac9dae4d405f8ddbf77301e8805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
