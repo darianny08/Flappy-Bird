@@ -9,8 +9,10 @@ public class RepeatBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
-        repeatWidth = startPos.x - 2.21f;
+        if (transform.position.x < repeatWidth)
+        {
+            transform.position = startsPos;
+        }
         
     }
 
@@ -19,7 +21,7 @@ public class RepeatBackground : MonoBehaviour
     {
         if (transform.position.x < repeatWidth)
         {
-            transform.position = startPos;
+            transform.position = startsPos;
         }
     }
 }
