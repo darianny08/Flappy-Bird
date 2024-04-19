@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         
-        InvokeRepeating("SpawnPipes", 2.0f, 3.0f);
+        InvokeRepeating("SpawnPipes", 1.0f, 1.0f);
     }
 
     // Update is called once per frame
@@ -21,6 +21,6 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnPipes()
     {
-        Instantiate(pipePrefab, new Vector2(2, Random.Range(-randomHeight, randomHeight)), Quaternion.identity);
+        Instantiate(pipePrefab, new Vector2(2, Random.Range(-2.82f, -0.14f)), Quaternion.identity);
     }
 }

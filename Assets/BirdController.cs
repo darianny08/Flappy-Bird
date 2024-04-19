@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public Text score UI;
-int score = 0;
+
 public class BirdController : MonoBehaviour
 {
-     public float speed;
+    public float speed;
 
-        Rigidbody2D bird;  
+    Rigidbody2D bird;
+
+    public Text scoreUI;
+    int score = 0;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +32,7 @@ public class BirdController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Points"))
+        if(other.gameObject.CompareTag("Point"))
 
         //Increase score by 1
         score = score + 1;
